@@ -10,8 +10,11 @@ class Furry:
     @commands.command()
     async def owo(self, user : discord.Member):
         """OwO what's this?"""
-
         await self.bot.say("*Notices " + user.mention + "'s bulge* OwO what's this?")
+    
+    async def succ(self, user : discord.Member):
+        """Someone gonna get some *succ*"""
+        await self.bot.say("*Pleasures " + user.mention + " with my mighty fine fox succ skills*")
 
 def setup(bot):
     bot.add_cog(Furry(bot))
