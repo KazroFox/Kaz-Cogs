@@ -8,7 +8,7 @@ class Furry:
         self.bot = bot
     
     @commands.command()
-    async def owo(self):
+    async def owo(self, user : discord.Member):
         """OwO what's this?"""
 
         await self.bot.say("*Notices " + user.mention + "'s bulge* OwO what's this?")
